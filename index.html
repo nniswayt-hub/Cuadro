@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tablas de estadística</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 32px 16px 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202938; background: #f3f5f9;
+  }
+  main { width: min(100%, 1050px); margin: auto; }
+  header { text-align: center; margin-bottom: 30px; }
+  header h1 { margin: 0 0 8px; font-size: clamp(1.7rem, 4vw, 2.3rem); }
+  header p { margin: 0; color: #647084; }
+  .table-card {
+    background: #fff; border: 1px solid #e1e6ef; border-radius: 16px;
+    padding: 22px; margin: 0 0 26px;
+    box-shadow: 0 8px 24px rgba(26, 39, 61, .06);
+  }
+  h2 { margin: 0 0 18px; font-size: 1.35rem; }
+  .table-wrap { width: 100%; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; min-width: 560px; }
+  th, td { padding: 14px 16px; text-align: center; border-bottom: 1px solid #e8edf4; }
+  th { background: #edf2f8; color: #334155; font-size: .92rem; }
+  th:first-child, td:first-child { text-align: left; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: #f8faff; }
+  .total td { font-weight: 700; background: #f4f7fb; }
+  .note { margin: 14px 0 0; color: #6b7280; font-size: .88rem; }
+  @media (max-width: 600px) {
+    body { padding: 24px 10px 32px; }
+    .table-card { padding: 16px 12px; border-radius: 12px; }
+    th, td { padding: 12px 10px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Trabajo de estadística</h1>
+    <p>Distribución de frecuencias: variables cualitativa y cuantitativa</p>
+  </header>
+
+  <section class="table-card">
+    <h2>Variable cualitativa</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Frecuencia absoluta</th>
+            <th>Frecuencia relativa</th>
+            <th>Porcentaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Instagram</td><td>13</td><td>0,325</td><td>32,5 %</td></tr>
+          <tr><td>YouTube</td><td>7</td><td>0,175</td><td>17,5 %</td></tr>
+          <tr><td>TikTok</td><td>15</td><td>0,375</td><td>37,5 %</td></tr>
+          <tr><td>Disney</td><td>1</td><td>0,025</td><td>2,5 %</td></tr>
+          <tr><td>Spotify</td><td>2</td><td>0,05</td><td>5 %</td></tr>
+          <tr><td>Facebook</td><td>1</td><td>0,025</td><td>2,5 %</td></tr>
+          <tr><td>Netflix</td><td>1</td><td>0,025</td><td>2,5 %</td></tr>
+          <tr class="total"><td>Total</td><td>40</td><td>1</td><td>100 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="table-card">
+    <h2>Variable cuantitativa</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Variable</th>
+            <th>Frecuencia absoluta</th>
+            <th>Frecuencia acumulada</th>
+            <th>Frecuencia relativa</th>
+            <th>Porcentaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0 a 2 horas</td><td>4</td><td>4</td><td>0,1</td><td>10 %</td></tr>
+          <tr><td>2 a 4 horas</td><td>7</td><td>11</td><td>0,175</td><td>17,5 %</td></tr>
+          <tr><td>4 a 6 horas</td><td>14</td><td>25</td><td>0,35</td><td>35 %</td></tr>
+          <tr><td>6 a 8 horas</td><td>10</td><td>35</td><td>0,25</td><td>25 %</td></tr>
+          <tr><td>8 a 10 horas</td><td>2</td><td>37</td><td>0,05</td><td>5 %</td></tr>
+          <tr><td>10 horas o más</td><td>3</td><td>40</td><td>0,075</td><td>7,5 %</td></tr>
+          <tr class="total"><td>Total</td><td>40</td><td>40</td><td>1</td><td>100 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+</body>
+</html>
